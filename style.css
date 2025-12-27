@@ -1,0 +1,160 @@
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0f2027, #000);
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Glass cards */
+.glass-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  padding: 25px;
+  margin-bottom: 30px;
+  transition: 0.3s ease;
+}
+
+.glass-card:hover {
+  background: rgba(0,255,213,0.1);
+  transform: translateY(-5px) scale(1.02);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 8%;
+  position: sticky;
+  top: 0;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.navbar a {
+  color: #aaa;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #00ffd5;
+}
+
+/* Hero */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 8%;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero h2 {
+  color: #00ffd5;
+  margin: 15px 0;
+}
+
+.buttons {
+  margin-top: 25px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin: 10px;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.primary {
+  background: linear-gradient(135deg, #00ffd5, #0077ff);
+  color: #000;
+}
+
+.primary:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+
+.secondary {
+  border: 1px solid #00ffd5;
+  color: #00ffd5;
+}
+
+.secondary:hover {
+  background: #00ffd5;
+  color: #000;
+}
+
+/* Sections */
+.section {
+  padding: 80px 8%;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  padding: 20px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.skill-card:hover {
+  background: rgba(0,255,213,0.15);
+  transform: translateY(-5px) scale(1.03);
+}
+
+.project-card {
+  border-left: 3px solid #00ffd5;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.project-card span {
+  color: #00ffd5;
+  font-size: 0.9rem;
+}
+
+.achievements li {
+  margin: 10px 0;
+}
+
+.contact-links a {
+  color: #00ffd5;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #777;
+}
+
+/* Smooth reveal animation */
